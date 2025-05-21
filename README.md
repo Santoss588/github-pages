@@ -1,17 +1,139 @@
-<header>
+import zipfile
+
+html_code = """<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalidade Alfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #e60000;
+        }
+        button {
+            background-color: #e60000;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .highlight {
+            color: #e60000;
+            font-weight: bold;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .img-banner, .img-section {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/YkzKJbA.jpg" alt="Homem alfa" class="img-banner">
+
+        <h1>Você Está Cansado de Ser Ignorado, Fraco e Invisível?</h1>
+        <p>Chegou a hora de se tornar o homem que impõe respeito, atrai olhares e domina seu próprio caminho — sem depender de dinheiro, beleza ou fama.</p>
+
+        <div class="section">
+            <h2>Você não precisa nascer "alfa". Você precisa aprender a se tornar um.</h2>
+            <p>Enquanto você se distrai com reels e pornografia, outros caras estão construindo corpo, mente e dinheiro.</p>
+            <img src="https://i.imgur.com/GYLeVvj.jpg" alt="Decisão Alfa" class="img-section">
+        </div>
+
+        <div class="section">
+            <h2>O que é o <span class="highlight">Mentalidade Alfa</span>?</h2>
+            <p>Um guia prático, direto e sem mimimi pra transformar sua mentalidade, postura, rotina e até sua presença online.</p>
+            <ul>
+                <li>Pensamento de liderança e comando</li>
+                <li>Respeito e presença de autoridade</li>
+                <li>Corte de vícios e distrações</li>
+                <li>Autoridade digital sem aparecer</li>
+            </ul>
+            <img src="https://i.imgur.com/7o5nNkU.jpg" alt="Postura Alfa" class="img-section">
+        </div>
+
+        <div class="section">
+             <h2>Você vai receber:</h2> 
+            <ul>
+                 <li><strong>E-book Mentalidade Alfa (R$47)</strong></li> 
+                <li><strong>Vídeo-aulas Alfa (R$147)</strong></li>
+                  <li><strong>Acesso ao Grupo Fechado no WhatsApp (R$97)</strong></li>  
+                  <li><strong>E-book Grátis: "7 Hábitos que Mudam a Vida de um Homem"</strong></li>  
+                  <li><strong>Bônus Exclusivo dentro do e-book principal</strong> (surpresa especial para quem chegar até o final)</li>  
+     </ul> 
+                <p>Valor total: <del>R$291</del> | <span class="highlight">Hoje por apenas R$47</span></p>    
+     </div> 
+
+     <classe Div="cta"> 
+                <button>Quero Me Tornar Um Alfa Agora</button>    
+     </div> 
+
+         <div class="seção">     
+                <h3>Garantia incondicional de 7 dias</h3>    
+                <p>Se em até 7 dias você não sentir nenhuma mudança, devolvemos seu dinheiro. Sem perguntas. Sem enrolação.</p>    
+                 <img src="https://i.imgur.com/z9bRXe7.jpg" alt="Confiança e Garantia" class="img-section">     
+     </div> 
+
+         <div class="seção">     
+                 <h2>Você escolhe:</h2>     
+                 <p>Continuar sendo o cara que ninguém leva a sério, ou o homem que impõe respeito em qualquer lugar que pisa.</p>     
+                <img src="https://i.imgur.com/W84DprW.jpg" alt="Escolha ser Alfa" class="img-section">    
+     </div> 
+    </div>
+</"Corpo">
+</<HTML>>
+"""
+
+arquivo_path = '/mnt/data/mentalidade_alfa/index.html'
+
+import os
+os.makedirs('/mnt/data/mentalidade_alfa', exist_ok=True)
+
+com open(file_path, 'w', codificação='utf-8') como f:
+   F. Escrever (HTML_Code)   
+
+zip_path = '/mnt/data/mentalidade_alfa.zip'
+
+com um arquivo. ZipFile (zip_path, 'w') como zipf:
+ zipf.write(file_path, arcname='index.html') 
+
+Zip_Path
+
 
 <!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
+      <<<< Notas do autor: Cabeçalho do curso >>>      
+       Inclua uma imagem de 1280 x 640, título do curso no caso da frase e uma descrição concisa em ênfase.       
+        Nas configurações do repositório: ative o repositório de modelos, adicione sua imagem social 1280x640, exclua automaticamente as ramificações de cabeça.        
+  Adicione sua licença de código aberto, o GitHub usa licença do MIT.  
 -->
 
 # GitHub Pages
 
 _Create a site or blog from your GitHub repositories with GitHub Pages._
 
-</header>
+<cabeça>
 
 <!--
   <<< Author notes: Course start >>>
@@ -23,11 +145,11 @@ _Create a site or blog from your GitHub repositories with GitHub Pages._
 
 With GitHub Pages, you can host project blogs, documentation, resumes, portfolios, or any other static content you'd like. Your GitHub repository can easily become its own website. In this course, we'll show you how to set up your own site or blog using GitHub Pages.
 
-- **Who is this for**: Beginners, students, project maintainers, small businesses.
-- **What you'll learn**: How to build a GitHub Pages site.
-- **What you'll build**: We'll build a simple GitHub Pages site with a blog. We'll use [Jekyll](https://jekyllrb.com), a static site generator.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course takes less than one hour to complete.
+- **Para quem é isto?**: Iniciantes, estudantes, mantenedores de projetos, pequenas empresas.
+- **O que você vai aprender**Como criar um site de páginas do GitHub.
+- **O que você vai construir**: Vamos construir um site simples do GitHub Pages com um blog. Nós vamos usar [Jóia](https://jekyllrb.com)um gerador de site estático.
+- **Pré-requisitos**: Se você precisa aprender sobre ramos, commits e pull requests, tome [Introdução ao GitHub](https://github.com/skills/introduction-to-github) Primeiro.
+-  **Quanto tempo?**Este curso leva menos de uma hora para ser concluído.
 
 In this course, you will:
 
